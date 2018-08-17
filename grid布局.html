@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-navbar (click)="test($event)">
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+    <ion-buttons right="">
+      <a href="http://www.baidu.com" padding="" (click)="show($event)">
+        <ion-icon name="home"></ion-icon>
+      </a>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid style="height: 200px">
+    <ion-row >
+      <ion-col col-4>
+        a
+      </ion-col>
+      <ion-col col-2>
+        a
+      </ion-col>
+      <ion-col col-6>
+        a
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col col-100>
+        as
+      </ion-col>
+      <ion-col col-100>
+        as
+      </ion-col>
+      <ion-col col-100>
+        as
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        2/12
+      </ion-col>
+      <ion-col col-8>
+       8/12
+      </ion-col>
+      <ion-col>
+        2/12
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        3/12
+      </ion-col>
+      <ion-col col-6>
+        6/12
+      </ion-col>
+      <ion-col>
+        3/12
+      </ion-col>
+    </ion-row>
+    在屏幕大于md 时  col-md-3   offset-md-3   都生效 col-3 offset-3  <br>
+    在屏幕小于md 时  col-md-3   offset-md-3   都无效
+    <ion-row>
+      <ion-col col-md-3>
+        1 of 3
+      </ion-col>
+      <ion-col col-md-3>
+        2 of 3
+      </ion-col>
+      <ion-col col-md-3 offset-md-3>
+        3 of 3
+      </ion-col>
+    </ion-row>
+    push 表示左间距多少<br>
+    pull 表示右间距多少
+    <ion-row>
+      <ion-col col-9 push-3>
+        push - 3
+      </ion-col>
+      <ion-col col-3 pull-9>
+        pull-9
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <a ion-item *ngFor="let one of [1,2,3,4,5,6,7,8,9,10,11,12,13,12,323,3232,3,12,221,3232,3,23,3,444,34,333,5,433]">
+      asAS{{one}}
+    </a>
+  </ion-list>
+</ion-content>
+
+<style>
+  ion-row,ion-col{
+    padding: 0px;
+  }
+  ion-row{
+    border: 1px solid red;
+  }
+  ion-col{
+    border: 1px solid rebeccapurple;
+  }
+  .A1{
+    width: 10rem;
+    height: 1rem;
+    background-color: rebeccapurple;
+  }
+  .A2{
+    width: 10rem;
+    height: 1rem;
+    background-color: red;
+    border: 0.2rem solid black;
+  }
+</style>
