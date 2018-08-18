@@ -1381,48 +1381,6 @@ Alert
 		isOpen()
 		onClose(func)
 	```
-	
-* 属性指令
-
-	|   指令  |   说明  |
-	|----------|----------|
-	| text-left |文字居左|
-	|text-center|文字居中|
-	|text-right|居右|
-	|text-justify||
-	|text-wrap||
-	|text-nowrap||
-	|text-uppercase|全部大写|
-	|text-lowercase|全部小写|
-	|text-capitalize|首字母大写|
-	|padding|全部16px| 
-	|padding-top||
-	|padding-left||
-	|padding-right||
-	|padding-bottom||
-	|padding-vertical|上下|
-	|padding-horizontal|左右|
-	|no-padding||
-	| margin |全部16px|
-	| margin-top||
-	| margin-left||
-	| margin-right||
-	| margin-bottom||
-	| margin-vertical|上下|
-	| margin-horizontal|左右|
-	|no-margin ||
-	|||
-	|no-border |去掉border|
-|ion-buttons|----------------------|
-|start:|ios： 定位在left <br> md/wp: 定位在right|
-|end:|ios ：定位在right<br>md/wp：在最右边|
-|left	|Positions element to the left of all other elements.|
-|right |	Positions element to the right of all other elements.|
-|	ShowWhen/HideWhen|  控制组件的显示 "ios" "android,ios","landscape"|
-
-
-	控制：上面的属性指令
-		`<div [attr.text-center]="isMD ? '' : null">文本</div>`
 * 网格系统 基于flex
 
 	[AA](http://ionicframework.com/docs/theming/responsive-grid/)
@@ -1935,6 +1893,8 @@ export class URLFactory{
           		3:使用 cordova-plugin-http插件 来进行网络请求
 				
 		```
+	* Tabs 自定义
+	
 		```
 		自定义Tabs图片
 		  在网页下可见
@@ -1945,11 +1905,9 @@ export class URLFactory{
 			
 		http://blog.giscafer.com/2017/06/27/ionic3-tab-custom-icon/ 实现
 
-
-作者：aluckdog
-链接：https://www.imooc.com/article/67858
-来源：慕课网
 		```		
+	* ionic ion-list 滚动问题
+	
 		```
 			ion-list 在模型嵌套下无法滚动
 				1：推荐 在外部包含ion-content 该控件会100% 100% 填充整个父标签
@@ -1959,4 +1917,9 @@ export class URLFactory{
 				overflow-x/y: hidden/scroll/auto;
 				margin-right: -15px; margin-bottom: -15px; 达到隐藏滚动条效果
 					
+		```
+	* ionic Pro （APP 调试）
+
+		```
+		https://ionicframework.com/docs/pro/
 		```
