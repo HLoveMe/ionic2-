@@ -1381,7 +1381,10 @@ Alert
 		isOpen()
 		onClose(func)
 	```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2085bf86ba9a16a4e3bf9f8b5ba2f5926b55b824
 * 网格系统 基于flex
 
 	[AA](http://ionicframework.com/docs/theming/responsive-grid/)
@@ -1894,6 +1897,8 @@ export class URLFactory{
           		3:使用 cordova-plugin-http插件 来进行网络请求
 				
 		```
+	* Tabs 自定义
+	
 		```
 		自定义Tabs图片
 		  在网页下可见
@@ -1903,7 +1908,13 @@ export class URLFactory{
 			而在android上只有一个类　.ion-md-homeImg
 			
 		http://blog.giscafer.com/2017/06/27/ionic3-tab-custom-icon/ 实现
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2085bf86ba9a16a4e3bf9f8b5ba2f5926b55b824
 		```		
+	* ionic ion-list 滚动问题
+	
 		```
 			ion-list 在模型嵌套下无法滚动
 				1：推荐 在外部包含ion-content 该控件会100% 100% 填充整个父标签
@@ -1913,4 +1924,9 @@ export class URLFactory{
 				overflow-x/y: hidden/scroll/auto;
 				margin-right: -15px; margin-bottom: -15px; 达到隐藏滚动条效果
 					
+		```
+	* ionic Pro （APP 调试）
+
+		```
+		https://ionicframework.com/docs/pro/
 		```
