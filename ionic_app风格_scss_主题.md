@@ -169,6 +169,8 @@
 			.toolbar-background{} $toolbar-background:xx
 		导航栏返回图标样式
 			.back-button-icon{}
+		导航栏标题文字
+			.toolbar-title{} -ios|-md
 		```
 	
 		
