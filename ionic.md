@@ -1381,10 +1381,6 @@ Alert
 		isOpen()
 		onClose(func)
 	```
-<<<<<<< HEAD
-
-=======
->>>>>>> 2085bf86ba9a16a4e3bf9f8b5ba2f5926b55b824
 * 网格系统 基于flex
 
 	[AA](http://ionicframework.com/docs/theming/responsive-grid/)

@@ -175,3 +175,15 @@
 	
 		
 	* 网格 [AA](https://ionicframework.com/docs/theming/responsive-grid/)
+
+* 修改默认组件
+	* ion-input
+		
+		```
+		高度是默认的 设置ion-input高度后 input 高度不跟随变化
+		.text-input{
+            height: 100%;
+            margin: 0px !important;
+            padding: 8px 0px;
+        }
+		```
