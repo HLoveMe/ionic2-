@@ -186,4 +186,7 @@
             margin: 0px !important;
             padding: 8px 0px;
         }
+        ion-input input{
+        	width: 100% !important;
+    	}
 		```
