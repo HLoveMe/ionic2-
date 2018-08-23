@@ -1904,10 +1904,7 @@ export class URLFactory{
 			而在android上只有一个类　.ion-md-homeImg
 			
 		http://blog.giscafer.com/2017/06/27/ionic3-tab-custom-icon/ 实现
-<<<<<<< HEAD
-=======
-
->>>>>>> 2085bf86ba9a16a4e3bf9f8b5ba2f5926b55b824
+		
 		```		
 	* ionic ion-list 滚动问题
 	
