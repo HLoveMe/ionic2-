@@ -21,7 +21,7 @@
 	
 	> cd ionic-native
 	
-	> npm install gulp
+	> sudo npm install --global gulp
 	
 	> npm i
 	
@@ -33,7 +33,11 @@
 		是支持的所有插件
 	目录就是你的插件
 		index.ts
-		
+	编译
+		npm run build Name
+		dist/@ionic-native/Name
+	拖到你的项目
+	安装 cordova-plugin-ionic-keyboard
 	```
 	
 	```

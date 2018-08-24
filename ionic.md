@@ -1636,6 +1636,7 @@ Alert
 			debugger; 加入代码 进行调试
 			
 			 $ ionic emulate ios -lc 模拟器时时调试
+			 $ionic cordova run android -l -c
 		```
 		
 	* 国际化
