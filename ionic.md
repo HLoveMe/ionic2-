@@ -1634,7 +1634,10 @@ Alert
 		
 		```
 			debugger; 加入代码 进行调试
+			首先 ：xcode编译通过
 			
+			 $ionic cordova platform add ios
+			 $ionic cordova build ios
 			 $ ionic emulate ios -lc 模拟器时时调试
 			 $ionic cordova run android -l -c
 		```

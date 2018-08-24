@@ -6,7 +6,7 @@ let plugin = {
             3：npm i
         ```
     "工程Root下  创建插件":{
-        "A":"安装plugman npm install -g plugman",
+        "A":"安装plugman ; npm install -g plugman",
         "B":"创建模板 plugman create --name MYNAME --plugin_id com.zzh.MYPUGIN --plugin_version 1.0.0",
         "C":"cd XXX",
         "D":"增加平台 plugman platform add --platform_name android / plugman platform add --platform_name ios"
