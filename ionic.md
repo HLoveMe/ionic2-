@@ -1638,7 +1638,7 @@ Alert
 			
 			 $ionic cordova platform add ios
 			 $ionic cordova build ios
-			 $ ionic emulate ios -lc 模拟器时时调试
+			 $ ionic cordova emulate ios -lc 模拟器时时调试
 			 $ionic cordova run android -l -c
 		```
 		
