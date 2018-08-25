@@ -1571,56 +1571,19 @@ Alert
 				_app.getRootNav().setRoot(Page)
 		```
 	* 导入第三方JS  （ typing 支持的库  /   不支持 ）
-		* 	支持
-			* 直接用typing 安装
-			* import * as JQ from "jquery"
+	
+		```
+		* typing库
+			* 安装库 npm install jquery
+			* 安装定义文件 npm install @types/jquery --save
+			* import * as $ from 'jquery';
+			* $('body').addClass('');
 			
-		*  不支持
-			* 在index.html导入js
-			* 在需要的地方导入全局声明
-				* declare var BMap;  百度地图
-				* 建立某个 XXXXX.d.ts
-					* declare var BMap:any;
-					* `/// <reference path="....XXXXX.d.ts"/>`
-						
+		* 自己的库js A
+			* 导入文件在assets下
+			* index.html 下导入<script src="/assets/jquery.min.js"></script> 
+			* ts declare var $: any; || xxx.d.ts中申明
 
-		```
-一:
-			1:下载JQ
-			2:放置在src/assets/xx文件夹下
-			3：index.html导入
-				<script src="buildjs/main.js"></script>
-				<script src="buildjs/jquery-3.1.1.min.js"><script>
-			4:创建一个 xx.ts文件
-				declare var $;   JQ.js里面的全局变量
-			5:使用
-				home.ts
-				declare var $;/declare var jQuery;
-				$.get().....
-二:typing 管理
-	1：安装typing
-	2:npm 安装jq
-	3:typing 安装jq
-	4:import * as $ from "jquery"
-
-		```
-		```
-			1:node/npm 安装库  Base64/JQuery
-			2:import * as Base64 from "base-64"
-			  import * as JQ from "jquery"
-			3:Base64就是导出的对象
-		```
-
-		```
-			exam:echarts 安装
-			
-			1:工程下npm  安装插件
-			2:在src declarations.d.ts文件中声明
-				declare module 'echarts';
-			3:在需要调用的位置
-				import echarts from 'echarts';
-			4:添加智能提示
-				工程下 npm install @types/echarts --save
 		```
 	* 表单
 		
@@ -1922,6 +1885,33 @@ export class URLFactory{
 				margin-right: -15px; margin-bottom: -15px; 达到隐藏滚动条效果
 					
 		```
+	* ion-content可以下上滚动
+	
+		```
+	 解决ion-content可以上下拉动一点距离问题  滚动
+	 	在ion-content 标签下有 <div class="scroll-content"></>
+	 	存在css  overflow-y: scroll; 导致可以上下拉动
+	 		
+	 @Directive({
+	  selector:"[base-content-no-scroll]"
+	})
+	export class BaseContentNoScroll{
+	  constructor(
+	    private ele:ElementRef,
+	  ){}
+	  ngOnInit(){
+	    let scroll_ele = this.ele.nativeElement.querySelector(".scroll-content");
+	    scroll_ele.style.overflowY = "hidden";
+	  }
+	}
+	注册：
+		declarations:[] 数组中
+	使用:
+		<ion-content base-content-no-scroll>
+		</ion-content>
+ 
+		```
+		
 	* ionic Pro （APP 调试）
 
 		```
