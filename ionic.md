@@ -1202,8 +1202,15 @@ Alert
 	```
 * Haptic
 
-* DeepLinker  实现指定页面URL
+
+* IonicModule IonicPage (app 内 使用url导航)
 	
+	```
+		之前使用push(Page)
+		push("url")
+	``` 
+
+* DeepLinker  实现指定页面URL(被ionic-plugin-deeplinks替换)
 	```
 	forRoot(A,{},{links:[]})
 	
