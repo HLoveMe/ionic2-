@@ -209,6 +209,11 @@ Alert
 			"ion-left"
 			color="light/secondary/danger..."
 		
+		
+		
+		<button ion-button (click)="logEvent($event)" clear [clear]>
+		  Click me!
+		</button>
 	```
 * Toggle
 
@@ -249,7 +254,7 @@ Alert
 		  <ion-checkbox color="dark" checked="true"></ion-checkbox>
 		</ion-item>
 		
-		checked: true 表示默认选择
+		checked: true 表示默认选择 [(ngModel)]
 		color:
 		disabled:
 		mode:
@@ -1251,7 +1256,7 @@ Alert
 			
 	```
 	
-* APP 配置 Config对象
+* IonicModule 配置 Config对象
 	
 	```
 		IonicModule.forRoot(MyApp,{
@@ -1327,11 +1332,11 @@ Alert
 		setTitle(val)  Document title
 		
 		viewDidEnter(O Observable) 在任何导航调用
-		viewDidLeave
-		viewDidLoad
-		viewWillEnter
-		viewWillEnter
-		viewWillUnloads
+		viewDidLeave  监听所有页面
+		viewDidLoad  监听所有页面
+		viewWillEnter  监听所有页面
+		viewWillEnter   监听所有页面
+		viewWillUnloads  监听所有页面的Unloads
 	```
 * Platform   
 	
