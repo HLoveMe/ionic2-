@@ -1,5 +1,17 @@
 * 主题
 
+	* App适配
+	
+		```
+		A:浏览器最小字体是12px 所有按照ionic 16 *62.5% = 10px
+			>浏览器显示有偏差  在手机上显示就是正常的
+			>px -->rem  设计图 20px -->20/2 /10px = 1rem
+			
+		B:推荐
+			head导入rem.js
+			(640,100) 640设计稿的标准 100比例
+			Button 设计稿为 200px === 2rem(200/100)
+		```
 	* App 风格
 		<a href="https://ionicframework.com/docs/theming/platform-specific-styles/">查看所有默认配置</a>
 
